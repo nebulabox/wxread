@@ -60,7 +60,7 @@ def get_wr_skey():
             return wr_skey
 
 
-tcnt = random.randint(100, 500)
+tcnt = random.randint(100, 300)
 print("tcnt=" + str(tcnt))
 while True:
     # 处理数据（后端只需要ct字段和s字段正确即可）
@@ -88,7 +88,7 @@ while True:
         num -= 1
 
     # 每一次代表30秒，比如你想刷1个小时这里填120，你只需要签到这里填2次
-    if num == tcnt:
+    if num >= tcnt:
         print("阅读脚本运行已完成！")
         push("阅读脚本运行已完成！")
         break
