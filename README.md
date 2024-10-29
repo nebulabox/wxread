@@ -34,7 +34,8 @@ json复制代码{
 
 ```
 bash复制代码
-0 2 * * * /www/server/pyporject_evn/wxread_venv/bin/python3 /root/wxread/main.py >> /root/wxread/logs/$(date +\%y-\%m.\%d)_sout.log 2>&1
+# 0 2 * * * /www/server/pyporject_evn/wxread_venv/bin/python3 /root/wxread/main.py >> /root/wxread/logs/$(date +\%y-\%m.\%d)_sout.log 2>&1
+10 7 * * * /usr/bin/python3 /home/nebulabox/src/wxread/main.py
 ```
 
 意思为：【在每天两点时刻使用python所在位置编译器运行某个路径下的main.py脚本，同时将输出按每天的日期格式输出到对应日志中】可供参考）。
