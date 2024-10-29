@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import requests
 import json
 import time
@@ -90,7 +92,7 @@ while True:
     # 每一次代表30秒，比如你想刷1个小时这里填120，你只需要签到这里填2次
     if num >= tcnt:
         print("阅读脚本运行已完成！")
-        push("阅读脚本运行已完成！")
+        # push("阅读脚本运行已完成！")
         break
     # 确认无s字段
     data.pop('s')
