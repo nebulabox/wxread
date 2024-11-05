@@ -28,7 +28,7 @@ json复制代码{
 }
 ```
 
-右键复制为Bash格式，然后在 [Convert curl commands to Python (curlconverter.com)](https://curlconverter.com/python/) 转化为Python脚本，复制需要的headers、cookies与data字段替换到`capture.py`即可。
+右键复制为Bash格式，然后在 [Convert curl commands to Python (curlconverter.com)](https://curlconverter.com/python/) 转化为Python脚本，复制需要的headers、cookies替换到`capture.py`即可。Data needn't replace. 
 
 2、服务器运行，在你的服务器上有Python运行环境即可，使用`cron`定义自动运行。（如：
 

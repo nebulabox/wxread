@@ -62,7 +62,7 @@ def get_wr_skey():
             return wr_skey
 
 
-tcnt = random.randint(100, 300)
+tcnt = random.randint(95, 190)
 print("tcnt=" + str(tcnt))
 while True:
     # 处理数据（后端只需要ct字段和s字段正确即可）
